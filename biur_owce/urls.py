@@ -19,7 +19,7 @@ from rezerwacje import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^room/(?P<id_>(\d)+)$', views.room),
-    url(r'^reserve/(?P<id_>(\d)+)$', views.reserve),
+    url(r'^reserve/(?P<id_>(\d)+)$', views.reserve, name='reserve'),
     url(r'^$', views.room_list),
     url(r'^add_room/$', views.add_room),
     url(r'^edit/(?P<id>(\d)+)/$', views.edit_room),
